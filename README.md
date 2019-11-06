@@ -1,18 +1,17 @@
-# notice-test
+# v-notice
 
-> A Vue.js project
+> 一个vue2.0的提示类函数式调用的组件
 
-## Build Setup
+## 使用方法
 
 ``` bash
-# install dependencies
-npm install
+# main.js
+import notice from './components/notice/notice' // 引入
+Vue.prototype.$notice = notice // 挂到vue上
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 调用
+方法一：notice({text: '提示语句', time: 1000})
+text：提示语句   time: 显示时间，默认是1500，单位ms
 
-# build for production with minification
-npm run build
+方法二：this.$notice({text: '开发测试'})
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

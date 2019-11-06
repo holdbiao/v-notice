@@ -12,8 +12,8 @@ export default {
   name: 'app',
   methods: {
     test () {
-      build({content: '打包后测试'}) // 打包后测试
-      // this.$notice({content: '开发测试'})
+      // build({text: '打包后测试'}) // 打包后测试
+      this.$notice({text: '开发测试'})
     }
   }
   // 1 开发完成组件

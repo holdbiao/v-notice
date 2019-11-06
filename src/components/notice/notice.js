@@ -7,7 +7,7 @@ const NoticeConstructor = Vue.extend(Notice)
 const notice = (option = {}) => { // 对外调用的方法
   const Instance = new NoticeConstructor({
     data: { // 传入组件的data
-      content: option.content,
+      content: option.text,
       duration: option.time || 2000
     }
   })
