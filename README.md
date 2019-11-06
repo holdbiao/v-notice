@@ -14,4 +14,7 @@ Vue.prototype.$notice = notice // 挂到vue上
 text：提示语句   time: 显示时间，默认是1500，单位ms
 
 方法二：this.$notice({text: '开发测试'})
+
+
+# 待开发完善，尚未发布npm
 ```
